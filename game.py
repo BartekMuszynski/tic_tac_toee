@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+import time
+
+>>>>>>> 4a642cd (tictactoe)
 class tictactoe :
 
     def __init__(self):
@@ -8,6 +13,10 @@ class tictactoe :
     def win_check(self):
         x_win = ["x", "x", "x"]
         o_win = ["o", "o", "o"]
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4a642cd (tictactoe)
         if self.gboard[0:3] == x_win or self.gboard[0:3] == o_win:
             return True
         if self.gboard[3:6] == x_win or self.gboard[3:6] == o_win:
@@ -28,6 +37,10 @@ class tictactoe :
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4a642cd (tictactoe)
     def char_choice(self):
         while True :
             try :
@@ -84,27 +97,53 @@ class tictactoe :
                 continue
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 4a642cd (tictactoe)
     def game(self):
         lsy = [f"{_}" for _ in range(9)]
         print(lsy[0:3])
         print(lsy[3:6])
         print(lsy[6:9])
         tictactoe.char_choice(self)
+<<<<<<< HEAD
         while tictactoe.win_check(self) != True :
+=======
+
+        while True :
+>>>>>>> 4a642cd (tictactoe)
             tictactoe.square_choice(self)
             if tictactoe.win_check(self) == True :
                 print("Player 1 won")
                 break
+<<<<<<< HEAD
+=======
+            if len(self.used_sqares) == 9:
+                print("thats a draw")
+                break
+>>>>>>> 4a642cd (tictactoe)
             tictactoe.squaree_choice(self)
             if tictactoe.win_check(self) == True:
                 print("Player 2 won")
                 break
+<<<<<<< HEAD
 
+=======
+            if len(self.used_sqares) == 9:
+                print("thats a draw")
+                break
+>>>>>>> 4a642cd (tictactoe)
 
 
 
 a = tictactoe().game()
+<<<<<<< HEAD
 
+=======
+time.sleep(10)
+>>>>>>> 4a642cd (tictactoe)
 
 
 
