@@ -25,10 +25,13 @@ class bot:
 
 
 
+
+
+
+
     def game (self):
         bot.open(self)
         bot.choice(self)
-
         mylist = [f"{_}" for _ in range(9)]
         a = random.sample(population=mylist, k=8)
         screenWidth, screenHeight = gui.size()
