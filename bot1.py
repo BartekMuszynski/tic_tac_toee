@@ -1,4 +1,4 @@
-import os
+import subprocess
 import random
 import pyautogui as gui
 
@@ -6,7 +6,7 @@ import pyautogui as gui
 class bot:
 
     def open(self):
-        os.startfile("C:\\Users\\bartosz.muszynski\\PycharmProjects\\tic_tac_toe\\game.py")
+        subprocess.call(["cmd", "/c", "start", "/max", "C:\\Users\\bartosz.muszynski\\PycharmProjects\\tic_tac_toe\\game.py"])
 
 
     def choice(self):
