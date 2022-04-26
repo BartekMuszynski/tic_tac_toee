@@ -1,6 +1,7 @@
 import subprocess
 import random
 import pyautogui as gui
+import time
 
 
 class bot:
@@ -31,9 +32,8 @@ class bot:
 
     def game(self):
         bot.open(self)
+        time.sleep(1)
         bot.choice(self)
-        gui.getActiveWindow()
-        gui.click()
         gui.typewrite(self.a)
         bot.moves(self)
 
